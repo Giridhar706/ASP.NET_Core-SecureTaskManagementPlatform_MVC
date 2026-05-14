@@ -1,0 +1,21 @@
+<h2>Login</h2>
+
+<form method="post">
+
+@Html.AntiForgeryToken()
+
+<label>Email</label><br/>
+<input name="email" />
+
+<br/><br/>
+
+<label>Password</label><br/>
+<input name="password" type="password" />
+
+<br/><br/>
+
+<button type="submit">Login</button>
+
+</form>
+
+<h4 style="color:red;">@ViewBag.Message</h4>
